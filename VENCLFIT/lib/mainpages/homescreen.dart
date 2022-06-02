@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:venclfit/cards/postcard.dart';
 
 class HomeScreen extends StatefulWidget{
   @override
@@ -7,10 +8,17 @@ class HomeScreen extends StatefulWidget{
 
 class _HomeScreenState extends State<HomeScreen>{
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return Container(
-      child: Text("홈스크린"),
+      child: ListView.builder(
+        itemCount: 30,
+        itemBuilder: (BuildContext context, int index)
+          {
+            return PostCard(
+              number: index,
+            );
+          }
+      )
     );
   }
 }
