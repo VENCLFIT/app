@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('Main', style: TextStyle(fontFamily: 'Work_Sans', fontSize:30,color: Colors.black),),
+        title: Text('VENCLFIT', style: TextStyle(fontFamily: 'Work_Sans', fontSize:30,color: Colors.black),),
         centerTitle: true,
         backgroundColor: Colors.white,
       ),
